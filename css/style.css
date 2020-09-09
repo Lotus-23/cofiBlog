@@ -48,8 +48,9 @@ ul {
     background: white;
     padding: 0 2rem;
     height: 0rem;
-    min-height: 10vh;
+    min-height: 15vh;
     overflow: hidden;
+    transition: 0.5s ease-in-out;
 }
 
 .nav .nav-menu {
@@ -59,7 +60,7 @@ ul {
 .nav .toggle-collapse {
     position: absolute;
     top: 0%;
-    width: 100%;
+    width: 90%;
     cursor: pointer;
     display: none;
 }
@@ -75,6 +76,11 @@ ul {
     color: var(--text-brown);
 }
 
+.collapse {
+    height: 32rem;
+    transition: 0.5s ease-in-out;
+}   
+
 .nav .nav-items {
     display: flex;
     margin: 0;
@@ -85,6 +91,11 @@ ul {
     font-size: 1.1rem;
     position: relative;
     font-size: 1.1rem;
+    transition: 0.5s;
+}
+
+.nav .nav-items .nav-link a {
+    transition: 0.5s;
 }
 
 .nav .nav-items .nav-link:hover {
@@ -125,6 +136,10 @@ ul {
 
     .nav .toggle-collapse {
         display: initial;
+    }
+
+    .nav .toggle-collapse .toggle-icons i:hover {
+        color: var(--text-light);
     }
 }
 
