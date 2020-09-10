@@ -18,7 +18,7 @@ body {
 
 
     /* Gradientes */
-    --sky: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+    --sky: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);;
 }
 
 /*---------- X- Variables CSS----------*/
@@ -40,6 +40,22 @@ ul {
     list-style-type: none;
 }
 
+h1 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+.btn {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
 /*---------- X- Clases Globales ----------*/
 
 /*---------- >- Barra de Navegacion ----------*/
@@ -48,7 +64,7 @@ ul {
     background: white;
     padding: 0 2rem;
     height: 0rem;
-    min-height: 11vh;
+    min-height: 9.5vh;
     overflow: hidden;
     transition: 0.5s ease-in-out;
 }
@@ -124,6 +140,43 @@ ul {
 }
 /*---------- X- Barra de Navegacion ----------*/
 
+/*---------- >- Contenido Principal ----------*/
+
+/*---------- >- Titulo pagina ----------*/
+main .site-title {
+    background: url('../assets/Background-image.png');
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-bg {
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--white);
+}
+
+main .site-title h1, h3 {
+    margin: 0.3rem;
+}
+
+main .site-title .btn {
+    margin: 1.8rem;
+    background: var(--sky);
+    transition: 0.2s ease-in-out;
+}
+
+main .site-title .btn:hover {
+    background: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+}
+/*---------- X- Titulo pagina ----------*/
+
+
+
+/*---------- X- Contenido Principal ----------*/
 
 /*---------- >- Viewport menor o igual a 750px ----------*/
 
